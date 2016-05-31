@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Multithreading Operations in C#";
+}
+
+<header>
+    <div class="content-wrapper">
+        <div class="float-left">
+            <h1>@ViewBag.Title</h1>
+        </div>
+    </div>
+</header>
+<div id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <p>
+                Knowledge of multithreading techniques is required to create applications that use more than one thread of execution.
+                For example, a process can have a user interface thread that manages interactions with the user and worker threads
+                that perform other tasks while the user interface thread waits for user input.
+                Quite often it is required to improve application performance with multithreading to maximize CPUs usage with parallel processing.
+                <br /><br />
+                Below examples demonstrate various thread activities and technics to achieve it:
+                <ul>
+                    <li>Creating and executing a thread</li>
+                    <li>Synchronization of threads</li>
+                    <li>Interaction between threads</li>
+                    <li>Using Thread Pool</li>
+                    <li>Using Monitor Pulse to signal change of state</li>
+                    <li>Using Mutex to protect shared resources</li>
+                </ul>
+            </p>
+        </div>
+    </section>
+    <section class="content-wrapper main-content clear-fix">
+        <h3>Select test you wish to run:</h3>
+        <ol class="round">
+            <li class="one">
+                <h5>@Html.ActionLink("Creating, starting, interacting between threads", "ThreadCreate", "Threads", new { area = "" }, null)</h5>
+            </li>
+            <li class="two">
+                <h5>@Html.ActionLink("Using Monitor to synchronize threads", "Monitor", "Threads", new { area = "" }, null)</h5>
+            </li>
+            <li class="three">
+                <h5>@Html.ActionLink("Using Thread Pool to run worker threads", "ThreadPool", "Threads", new { area = "" }, null)</h5>
+            </li>
+            <li class="four">
+                <h5>@Html.ActionLink("Using Mutex to protect shared resources", "Mutex", "Threads", new { area = "" }, null)</h5>
+            </li>
+        </ol>
+    </section>
+</div>
+
