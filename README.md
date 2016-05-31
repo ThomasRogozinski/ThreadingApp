@@ -1,0 +1,2 @@
+Sample Multithreading Web Application presents variety of multithreading techniques as well as SignalR ASP.Net library which allows bidirectional communication between server and client app.</br>
+Demos are hosted in web environment to add some level of complexity to plain multithreading operations. Level of difficulty is raised by necessity to develop web based client/server communication channel.
